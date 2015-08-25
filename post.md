@@ -1,4 +1,4 @@
-Last month we've learned about higher-order functions in JavaScript<sup>[Catching up with JavaScript higher-order functions](https://www.airpair.com/javascript/posts/catching-up-with-javascript-higher-order-functions)</sup>. Let's give them some real meaning cracking ES6 higher-order functions for Arrays!
+Last month we've learned about higher-order functions in JavaScript with **Catching up with JavaScript higher-order functions**<sup>[Catching up with JavaScript higher-order functions](https://www.airpair.com/javascript/posts/catching-up-with-javascript-higher-order-functions)</sup>. Let's give them some real meaning cracking ES6 higher-order functions for Arrays!
 
 ## ES6 Arrow notation 101
 
@@ -69,7 +69,7 @@ var deconstruct = number => ({
 
 ### More on Arrow functions
 
-There are many other cool things about arrow functions, like the **lexical this binding**. Learn more with two great and free online books: **Exploring ES6** from Dr. Axel Rauschmayer<sup>[Exploring ES6 from Dr. Axel Rauschmayer](http://exploringjs.com/es6/ch_arrow-functions.html)</sup> and **Understanding ECMAScript 6** from Nicholas Zakas<sup>[Understanding ECMAScript 6 from Nicholas Zakas](https://leanpub.com/understandinges6/read/#leanpub-auto-arrow-functions)</sup>.
+There are many other cool things about arrow functions, like the **lexical this binding**. Learn more with two great and free online books: **Exploring ES6**<sup>[Exploring ES6 from Dr. Axel Rauschmayer](http://exploringjs.com/es6/ch_arrow-functions.html)</sup> from Dr. Axel Rauschmayer and **Understanding ECMAScript 6**<sup>[Understanding ECMAScript 6 from Nicholas Zakas](https://leanpub.com/understandinges6/read/#leanpub-auto-arrow-functions)</sup> from Nicholas Zakas.
 
 ## Higher-order functions for Arrays
 
