@@ -97,6 +97,8 @@ for (var i = 0; i < starships.length; i++) {
 }
 ```
 
+See how difficult is to grasp the functioning of this code in a glance. There is some code repetition (```if```/```else``` blocks), which makes it harder to notice important varying details (the number of starships per type). It is also not crystal clear what is the output of this code.
+
 ### 1) Array.prototype.forEach
 
 Syntax: ```array.forEach(callback)```
