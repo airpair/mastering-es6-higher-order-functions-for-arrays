@@ -101,7 +101,7 @@ for (var i = 0; i < starships.length; i++) {
 
 Syntax: ```array.forEach(callback)```
 
-Introduced in ES5, this function executes the provided ```callback``` once for each element present in the array in ascending order.
+Introduced in ES5, this higher-order function executes the provided ```callback``` once for each element present in the array in ascending order.
 
 The callback receives three arguments:
 
@@ -142,7 +142,7 @@ More details on **MDN**<sup>[MDN - Array.prototype.forEach()](https://developer.
 
 Syntax: ```array.filter(callback)```
 
-Introduced in ES5, this function returns a new subarray with every element from the original array that passes on the test provided by ```callback```, i.e., if ```callback``` returns  ```true``` for a particular element, then this element gets included in the subarray to be returned.
+Introduced in ES5, this higher-order function returns a new subarray with every element from the original array that passes on the test provided by ```callback```, i.e., if ```callback``` returns  ```true``` for a particular element, then this element gets included in the subarray to be returned.
 
 The callback receives three arguments:
 
@@ -182,7 +182,7 @@ More details on **MDN**<sup>[MDN - Array.prototype.filter()](https://developer.m
 
 Syntax: ```array.map(callback)```
 
-Introduced in ES5, this function returns a new array with the results of ```callback``` applied to every element from the original array, in the same order. 
+Introduced in ES5, this higher-order function returns a new array with the results of ```callback``` applied to every element from the original array, in the same order. 
 
 The callback receives three arguments:
 
@@ -221,7 +221,7 @@ More details on **MDN**<sup>[MDN - Array.prototype.map()](https://developer.mozi
 
 Syntax: ```array.reduce(callback, initialValue)```
 
-Introduced in ES5, this function reduces an array into a single value, as explained in **Understand Javascript Array Reduce in 1 Minute**<sup>[Understand Javascript Array Reduce in 1 Minute](https://www.airpair.com/javascript/javascript-array-reduce)</sup>. It applies consecutively ```callback``` against ```initialValue``` and then on each value of the array, from left to right.
+Introduced in ES5, this higher-order function reduces an array into a single value, as explained in **Understand Javascript Array Reduce in 1 Minute**<sup>[Understand Javascript Array Reduce in 1 Minute](https://www.airpair.com/javascript/javascript-array-reduce)</sup>. It applies consecutively ```callback``` against ```initialValue``` and then on each value of the array, from left to right.
 
 The callback receives four arguments:
 
@@ -261,7 +261,7 @@ More details on **MDN**<sup>[MDN - Array.prototype.reduce()](https://developer.m
 
 Syntax: ```array.some(callback)```
 
-Introduced in ES5, this function returns ```true``` if there is any element in the array that passes the test provided by ```callback```, and ```false``` otherwise.
+Introduced in ES5, this higher-order function returns ```true``` if there is any element in the array that passes the test provided by ```callback```, and ```false``` otherwise.
 
 The callback receives three arguments:
 
@@ -297,7 +297,7 @@ More details on **MDN**<sup>[MDN - Array.prototype.some()](https://developer.moz
 
 Syntax: ```array.every(callback)```
 
-Introduced in ES5, this function returns ```true``` if every element in the array passes the test provided by ```callback```, and ```false``` otherwise.
+Introduced in ES5, this higher-order function returns ```true``` if every element in the array passes the test provided by ```callback```, and ```false``` otherwise.
 
 The callback receives three arguments:
 
@@ -333,7 +333,7 @@ More details on **MDN**<sup>[MDN - Array.prototype.every()](https://developer.mo
 
 Syntax: ```array.find(callback)``` and ```array.findIndex(callback)```
 
-Introduced in ES6, these two functions the first element value (for ```find```) or index (for ```findIndex```) in the array that passes the test provided by ```callback```, and ```undefined``` (for ```find```) or ```-1``` (for ```findIndex```) otherwise.
+Introduced in ES6, these two higher-order functions the first element value (for ```find```) or index (for ```findIndex```) in the array that passes the test provided by ```callback```, and ```undefined``` (for ```find```) or ```-1``` (for ```findIndex```) otherwise.
 
 The callback receives three arguments:
 
