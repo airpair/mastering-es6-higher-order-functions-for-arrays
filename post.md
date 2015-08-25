@@ -4,7 +4,7 @@ Last month we've learned about higher-order functions in JavaScript with **Catch
 
 Before we go any further, be advised we will be using ES6 Arrow notation for functions. If you are already familiar with this new notation, feel free to skip this section.
 
-For those that are staying on, ES6 Arrow notation is fairly simple. It's just a brand new way to write short functions, which will basically unclutter the code, making it easier to read and write higher-order functions - which goes great with functional programming.
+For those that are staying on, ES6 Arrow notation is fairly simple. It's just a brand new way to write short functions, which will basically make the code uncluttered, making it easier to read and write higher-order functions - which goes great with functional programming.
 
 There are just 2 things you need to know about the arrow notation at this point:
 
@@ -42,7 +42,7 @@ var averageOfThree = (a, b, c) => {
     return sum / 3;
 };
 
-// When there is just 1 parameter, the parenthesis before the => can be ommitted
+// When there is just 1 parameter, the parenthesis before the => can be omitted
 var deconstruct = number => {
     return {
         integral: Math.trunc(number),
@@ -73,7 +73,7 @@ There are many other cool things about arrow functions, like the **lexical this 
 
 ## Higher-order functions for Arrays
 
-Now, let's have a look on some ES6 high-order functions for Arrays. They will allow you to write code using Functional approach, so that you will no longer need to use Imperative ```for```/```while``` loops to process arrays. You will soon enough understand how much better it is to work with those high-order functions compared to loops, as they are much more expressive, readable, reusable, maintainable and consequentially more ellegant.
+Now, let's have a look on some ES6 high-order functions for Arrays. They will allow you to write code using Functional approach, so that you will no longer need to use Imperative ```for```/```while``` loops to process arrays. You will soon enough understand how much better it is to work with those high-order functions compared to loops, as they are much more expressive, readable, reusable, maintainable and consequentially more elegant.
 
 In order to illustrate, let's take the following Imperative program and rewrite it:
 
