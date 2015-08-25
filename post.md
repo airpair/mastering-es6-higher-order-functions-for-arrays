@@ -156,7 +156,7 @@ This is how it works:
 1. ```callback``` is applied to the 2nd element of the original array, and if the result is ```true```, then this element gets included in the new array to be returned.
 1. And so on... until the last element of the array is processed, then the new array is returned as the result of ```filter```.
 
-This time, we will modify the program by first filtering out the elements that aren't part of the operation. This way, ```filter``` will result in a subarray containing just the elements known to be part of the operation, so that we no longer need the ```if```/```else``` blocks. Then, this subarray will call  ```forEach``` to continue with the calculation of civilians.
+This time, we will modify the program by first filtering out the elements that aren't part of the operation. This way, ```filter``` will result in a subarray containing just the elements known to be part of the operation, so that we will no longer need the ```if```/```else``` blocks. Then, this subarray will call  ```forEach``` to continue with the calculation of civilians.
 
 ```javascript
 var starships = require('../starships.json');
