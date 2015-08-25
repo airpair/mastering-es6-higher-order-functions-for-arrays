@@ -335,7 +335,7 @@ More details on **MDN**<sup>[MDN - Array.prototype.every()](https://developer.mo
 
 Syntax: ```array.find(callback)``` and ```array.findIndex(callback)```
 
-Introduced in ES6, these two higher-order functions the first element value (for ```find```) or index (for ```findIndex```) in the array that passes on the test provided by ```callback```, and ```undefined``` (for ```find```) or ```-1``` (for ```findIndex```) otherwise.
+Introduced in ES6, these two higher-order functions find the first element value (for ```find```) or index (for ```findIndex```) in the array that passes on the test provided by ```callback```, and ```undefined``` (for ```find```) or ```-1``` (for ```findIndex```) otherwise.
 
 The callback receives three arguments:
 
