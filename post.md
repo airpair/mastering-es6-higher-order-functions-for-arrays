@@ -263,7 +263,7 @@ More details on **MDN**<sup>[MDN - Array.prototype.reduce()](https://developer.m
 
 Syntax: ```array.some(callback)```
 
-Introduced in ES5, this higher-order function returns ```true``` if there is any element in the array that passes the test provided by ```callback```, and ```false``` otherwise.
+Introduced in ES5, this higher-order function returns ```true``` if there is any element in the array that passes on the test provided by ```callback```, and ```false``` otherwise.
 
 The callback receives three arguments:
 
@@ -299,7 +299,7 @@ More details on **MDN**<sup>[MDN - Array.prototype.some()](https://developer.moz
 
 Syntax: ```array.every(callback)```
 
-Introduced in ES5, this higher-order function returns ```true``` if every element in the array passes the test provided by ```callback```, and ```false``` otherwise.
+Introduced in ES5, this higher-order function returns ```true``` if every element in the array passes on the test provided by ```callback```, and ```false``` otherwise.
 
 The callback receives three arguments:
 
@@ -335,7 +335,7 @@ More details on **MDN**<sup>[MDN - Array.prototype.every()](https://developer.mo
 
 Syntax: ```array.find(callback)``` and ```array.findIndex(callback)```
 
-Introduced in ES6, these two higher-order functions the first element value (for ```find```) or index (for ```findIndex```) in the array that passes the test provided by ```callback```, and ```undefined``` (for ```find```) or ```-1``` (for ```findIndex```) otherwise.
+Introduced in ES6, these two higher-order functions the first element value (for ```find```) or index (for ```findIndex```) in the array that passes on the test provided by ```callback```, and ```undefined``` (for ```find```) or ```-1``` (for ```findIndex```) otherwise.
 
 The callback receives three arguments:
 
