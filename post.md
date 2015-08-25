@@ -347,7 +347,7 @@ This is how it works:
 
 1. ```callback``` is applied to the 1st element of the original array, and if the result is ```true```, then this element is returned as the result of ```find```/```findIndex```.
 1. Otherwise, ```callback``` is applied to the 2nd element of the original array, and again if the result is ```true```, then this element is returned as the result of ```find```/```findIndex```.
-1. And so on... until the last element of the array is processed, if ```true``` was never returned then ```find``` returns ```undefined``` and ```findIndex``` returns ```-1```.
+1. And so on... until the last element of the array is processed, if ```true``` was never returned then ```find``` returns ```undefined``` / ```findIndex``` returns ```-1```.
 
 Now, a new program to check which ship can travel faster than 2000 mph, using ```find``` for the value and ```findIndex``` for the index:
 
