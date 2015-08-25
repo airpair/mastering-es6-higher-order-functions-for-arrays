@@ -223,7 +223,7 @@ More details on **MDN**<sup>[MDN - Array.prototype.map()](https://developer.mozi
 
 Syntax: ```array.reduce(callback, initialValue)```
 
-Introduced in ES5, this higher-order function reduces an array into a single value, as explained in **Understand Javascript Array Reduce in 1 Minute**<sup>[Understand Javascript Array Reduce in 1 Minute](https://www.airpair.com/javascript/javascript-array-reduce)</sup>. It applies consecutively ```callback``` against ```initialValue``` and then on each value of the array, from left to right.
+Introduced in ES5, this higher-order function reduces an array into a single value, as explained in **Understand Javascript Array Reduce in 1 Minute**<sup>[Understand Javascript Array Reduce in 1 Minute](https://www.airpair.com/javascript/javascript-array-reduce)</sup>. It first applies ```callback``` against ```initialValue``` and then consecutively on each value of the array, from left to right.
 
 The callback receives four arguments:
 
