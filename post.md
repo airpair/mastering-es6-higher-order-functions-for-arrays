@@ -73,7 +73,7 @@ There are many other cool things about arrow functions, like the **lexical this 
 
 ## Higher-order functions for Arrays
 
-Now, let's have a look on some ES6 high-order functions for Arrays. They allow you to write code using a Functional approach, so that you will no longer need to use Imperative ```for```/```while``` loops to process arrays. Soon enough, you will figure out how better to work with are those high-order functions compared to loops, as they are much more expressive, readable, reusable, maintainable and consequentially more ellegant.
+Now, let's have a look on some ES6 high-order functions for Arrays. They will allow you to write code using Functional approach, so that you will no longer need to use Imperative ```for```/```while``` loops to process arrays. You will soon enough understand how much better it is to work with those high-order functions compared to loops, as they are much more expressive, readable, reusable, maintainable and consequentially more ellegant.
 
 In order to illustrate, let's take the following Imperative program and rewrite it:
 
@@ -97,7 +97,7 @@ for (var i = 0; i < starships.length; i++) {
 }
 ```
 
-See how difficult is to grasp the functioning of this code in a glance. There is some code repetition (```if```/```else``` blocks), which makes it harder to notice important varying details (the number of starships per type). It is also not crystal clear what is the output of this code.
+See how difficult it is to grasp the functioning of this code in a glance. There is some code repetition (```if```/```else``` blocks), which makes it harder to notice important varying details (the number of starships per type). It is also not crystal clear what is the output of this code.
 
 ### 1) Array.prototype.forEach
 
