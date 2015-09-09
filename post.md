@@ -13,7 +13,7 @@ ES6 Arrow notation is fairly simple. It's just a brand new way to write short fu
 
 There are just 2 things you need to know about the arrow notation at this point:
 
-### 1) Arrow function with a body (statement block)
+### 1) Statement block, a.k.a. arrow function with a body
 
 Given some ordinary functions:
 
@@ -56,7 +56,7 @@ var deconstruct = number => {
 };
 ```
 
-### 2) Arrow function without a body (expression block)
+### 2) Expression block, a.k.a. arrow function without a body 
 
 When your function is just meant to return something in one-line, you can use the expression block to simplify it even further, by just replacing ```{ ... }``` with the expression to be returned:
 
