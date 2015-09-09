@@ -381,3 +381,7 @@ var firstShipIndexThatCanTravelFasterThan2000mph = starships
 ```
 
 For more details on ```Array.prototype.find``` and ```Array.prototype.findIndex``` see the **Mozilla Developer Network docs**<sup>[MDN - Array.prototype.find()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/find) and [MDN - Array.prototype.findIndex()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/findIndex)</sup>.
+
+## Your own higher-order function for Array
+
+bla bla bla
