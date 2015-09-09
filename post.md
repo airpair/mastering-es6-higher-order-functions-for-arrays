@@ -1,7 +1,9 @@
 Synopsis
 > Higher-order functions are beautifully concise yet expressive when dealing with data. Elevate your functional programming skills by learning ES6 higher-order functions for Arrays!
 
-JavaScript has great support for **higher-order functions** (which either takes functions as input or outputs another function), in such a way it feels natural to work with them. I have covered the fundamentals of higher-order functions in JavaScript in my previous post **Catching up with JavaScript higher-order functions**<sup>[Catching up with JavaScript higher-order functions](https://www.airpair.com/javascript/posts/catching-up-with-javascript-higher-order-functions)</sup>. 
+JavaScript has great support for **higher-order functions**, in such a way it feels natural to work with them. This special kind of function, which either take other functions as input or outputs another function, is being widely used such as in event callbacks, Node.js middlewares and data manipulation.
+
+I have covered the fundamentals of higher-order functions in JavaScript in my previous post **Catching up with JavaScript higher-order functions**<sup>[Catching up with JavaScript higher-order functions](https://www.airpair.com/javascript/posts/catching-up-with-javascript-higher-order-functions)</sup>. 
 
 Let's give them some real meaning cracking ES6 higher-order functions for Arrays!
 
