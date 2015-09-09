@@ -145,7 +145,7 @@ starships.forEach( starship => {
 } );
 ```
 
-More details on **MDN**<sup>[MDN - Array.prototype.forEach()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach)</sup>.
+For more details on ```Array.prototype.forEach``` see the **Mozilla Developer Network docs**<sup>[MDN - Array.prototype.forEach()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach)</sup>.
 
 ### 2) Array.prototype.filter
 
@@ -185,7 +185,7 @@ starships
     } );
 ```
 
-More details on **MDN**<sup>[MDN - Array.prototype.filter()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter)</sup>.
+For more details on ```Array.prototype.filter``` see the **Mozilla Developer Network docs**<sup>[MDN - Array.prototype.filter()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter)</sup>.
 
 ### 3) Array.prototype.map
 
@@ -224,7 +224,7 @@ starships
     .forEach( number => { civilians += number; } );
 ```
 
-More details on **MDN**<sup>[MDN - Array.prototype.map()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map)</sup>.
+For more details on ```Array.prototype.map``` see the **Mozilla Developer Network docs**<sup>[MDN - Array.prototype.map()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map)</sup>.
 
 ### 4) Array.prototype.reduce
 
@@ -264,7 +264,7 @@ var civilians = starships
         previous + operation[current.name] * parseInt(current.passengers, 10), 0 );
 ```
 
-More details on **MDN**<sup>[MDN - Array.prototype.reduce()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce)</sup>.
+For more details on ```Array.prototype.reduce``` see the **Mozilla Developer Network docs**<sup>[MDN - Array.prototype.reduce()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce)</sup>.
 
 ### 5) Array.prototype.some
 
@@ -300,7 +300,7 @@ var canAnyShipTravelFasterThan1000mph = starships
     .some( starship => parseInt(starship.max_atmosphering_speed, 10) >= 1000 );
 ```
 
-More details on **MDN**<sup>[MDN - Array.prototype.some()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/some)</sup>.
+For more details on ```Array.prototype.some``` see the **Mozilla Developer Network docs**<sup>[MDN - Array.prototype.some()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/some)</sup>.
 
 ### 6) Array.prototype.every
 
@@ -336,7 +336,7 @@ var canOperationTravelFasterThan1000mph = starships
     .every( starship => parseInt(starship.max_atmosphering_speed, 10) >= 1000 );
 ```
 
-More details on **MDN**<sup>[MDN - Array.prototype.every()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/every)</sup>.
+For more details on ```Array.prototype.every``` see the **Mozilla Developer Network docs**<sup>[MDN - Array.prototype.every()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/every)</sup>.
 
 ### 7) Array.prototype.find and Array.prototype.findIndex
 
@@ -380,4 +380,4 @@ var firstShipIndexThatCanTravelFasterThan2000mph = starships
         && parseInt(starship.max_atmosphering_speed, 10) >= 2000 );
 ```
 
-More details on **MDN**<sup>[MDN - Array.prototype.find()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/find) and [MDN - Array.prototype.findIndex()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/findIndex)</sup>.
+For more details on ```Array.prototype.find``` and ```Array.prototype.findIndex``` see the **Mozilla Developer Network docs**<sup>[MDN - Array.prototype.find()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/find) and [MDN - Array.prototype.findIndex()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/findIndex)</sup>.
