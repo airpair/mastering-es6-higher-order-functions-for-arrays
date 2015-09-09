@@ -7,9 +7,9 @@ Let's give them some real meaning cracking ES6 higher-order functions for Arrays
 
 ## ES6 Arrow notation 101
 
-Before we go any further, be advised we will be using ES6 Arrow notation for functions. If you are already familiar with this new notation, feel free to skip this section.
+Before we go any further, be advised we will be using ES6 Arrow notation for functions. If you are already familiar with this new notation, here's a quick refresher.
 
-For those that are staying on, ES6 Arrow notation is fairly simple. It's just a brand new way to write short functions, which will basically make the code uncluttered, making it easier to read and write higher-order functions - which goes great with functional programming.
+ES6 Arrow notation is fairly simple. It's just a brand new way to write short functions, which will basically make the code uncluttered, making it easier to read and write higher-order functions - which goes great with functional programming.
 
 There are just 2 things you need to know about the arrow notation at this point:
 
