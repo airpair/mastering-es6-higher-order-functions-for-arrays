@@ -384,4 +384,32 @@ For more details on ```Array.prototype.find``` and ```Array.prototype.findIndex`
 
 ## Your own higher-order function for Array
 
-bla bla bla
+```javascript
+var starships = require('../starships.json');
+
+var randomSeed = length => {
+	return Math.floor(Math.random() * length);
+};
+
+Array.prototype.produceRandomElements = randomSeed => {
+	var length = this.length,
+		remainingIndexes = Array.apply(null, Array(length)).map((item, index) => index);
+
+	return () => {
+		var remainingIndexesLength = remainingIndexes.length;
+		if ( remainingIndexesLength > 0 ) {
+			var newIndex = randomSeed(remainingIndexesLength);
+			return this[remainingIndexes.splice(newIndex, 1)];
+		}
+		return undefined;
+	}.bind(this);
+};
+
+var producer = starships.produceRandomElements( randomSeed );
+// console.log(producer());
+// console.log(producer());
+// console.log(producer());
+
+var shuffled = starships.map(starships.produceRandomElements( randomSeed ));
+//console.log(shuffled);
+```
