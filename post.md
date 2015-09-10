@@ -396,11 +396,11 @@ Array.prototype.produceRandomElements = randomSeed => {
 		remainingIndexes = Array.apply(null, Array(length)).map((item, index) => index);
 
 	return () => {
-		var remainingIndexesLength = remainingIndexes.length;
-		if ( remainingIndexesLength > 0 ) {
-			var newIndex = randomSeed(remainingIndexesLength);
-			return this[remainingIndexes.splice(newIndex, 1)];
-		}
+        let remainingIndexesLength = remainingIndexes.length;
+        if ( remainingIndexesLength > 0 ) {
+            let newIndex = randomSeed(remainingIndexesLength);
+            return this[remainingIndexes.splice(newIndex, 1)];
+        }
 		return undefined;
 	}.bind(this);
 };
