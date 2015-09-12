@@ -431,6 +431,6 @@ var shuffled = starships.map( starships.produceRandomElements(randomSeed) );
 console.log(shuffled);
 ```
 
-Now you can start writing your own higher-order functions to deal with arrays. A good way to start is creating create functions by composing some of the functions above. As a challenge, I would propose a simple exercise:
+Now you can start writing your own higher-order functions to deal with arrays. A good way to start is composing some of the functions above. As a challenge, I would propose a simple exercise:
 
 > Implement yourself ```_.pluck()```, ```_.where()```, ```_.findWhere()``` and ```_.reject()``` from Underscore.js<sup>[Underscore.js](http://underscorejs.org/)</sup> only using ES6 higher-order functions for Arrays.
