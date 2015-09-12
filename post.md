@@ -407,11 +407,11 @@ Array.prototype.produceRandomElements = randomSeed => {
 
 This function takes a random generator function as the parameter ```randomSeed```. It will then make a copy of the current indexes of the array in ```remainingIndexes``` and return a function that when called will always return a different random element from the array.
 
-This is achieved by calling ```randomSeed``` each time to get a random index from the ```remainingIndexes```, then removing this index from ```remainingIndexes``` and finally returning the element which has such random index from the array. 
+This is achieved by calling ```randomSeed``` each time to get a random index from the ```remainingIndexes```, then removing that index from ```remainingIndexes``` and finally returning the array's element at that index position.
 
 Whenever ```remainingIndexes``` gets empty, it is re-generated so the random distribution can start over.
 
-This function can be used in different ways: getting individual elements each time, or getting a shuffled copy of the array by mapping:
+This function can be used in different ways, like getting individual elements each time, or getting a shuffled copy of the array through ```map```:
 
 ```javascript
 var starships = require('../starships.json');
@@ -426,7 +426,7 @@ console.log(producer());
 console.log(producer());
 console.log(producer());
 
-// Getting a shuffled copy of the array by mapping
+// Getting a shuffled copy of the array through mapping
 var shuffled = starships.map( starships.produceRandomElements(randomSeed) );
 console.log(shuffled);
 ```
