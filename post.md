@@ -384,23 +384,34 @@ For more details on ```Array.prototype.find``` and ```Array.prototype.findIndex`
 
 ## Your own higher-order function
 
-Now that you got the hang of higher-order functions for Arrays, let's write a custom function. One that is useful enough to be reusable in different contexts.
+Now that you got the hang of higher-order functions for Arrays, let's write a our own function. One that is useful enough to be reusable in different contexts.
+
+Let's suppose we need a function to return a different random element from the array each time it is called. The elements must never repeat within the interval of the array length, i.e., if the array has 10 elements, a different random number must be returned for the 10 first times the function is called. After that, the randomizer must be reset and for the next 10 times the function is called, the client must get another set of 10 random items, and so on.
+
+This can be implemented in a higher-order function ```Array.prototype.produceRandomElements```:
 
 ```javascript
 Array.prototype.produceRandomElements = randomSeed => {
-	var remainingIndexes = Array.apply(null, Array(this.length)).map((item, index) => index);
+	var remainingIndexes = [];
 
 	return () => {
-        var remainingIndexesLength = remainingIndexes.length;
-        if ( remainingIndexesLength > 0 ) {
-            var newIndex = randomSeed(remainingIndexesLength);
-            return this[remainingIndexes.splice(newIndex, 1)];
+        if ( remainingIndexes.length === 0 ) {
+        	remainingIndexes = Array.apply(null, Array(this.length)).map((item, index) => index);
         }
-		return undefined;
+
+        var selectedIndex = randomSeed(remainingIndexes.length);
+        return this[remainingIndexes.splice(selectedIndex, 1)];
 	}.bind(this);
 };
 ```
 
+This function takes a random generator function as the parameter ```randomSeed```. It will then make a copy of the current indexes of the array in ```remainingIndexes``` and return a function that when called will always return a different random element from the array.
+
+This is achieved by calling ```randomSeed``` each time to get a random index from the ```remainingIndexes```, then removing this index from ```remainingIndexes``` and finally returning the element which has such random index from the array. 
+
+Whenever ```remainingIndexes``` gets empty, it is re-generated so the random distribution can start over.
+
+This function can be used in different ways: getting individual elements each time, or getting a shuffled copy of the array by mapping:
 
 ```javascript
 var starships = require('../starships.json');
@@ -409,11 +420,13 @@ var randomSeed = length => {
 	return Math.floor(Math.random() * length);
 };
 
+// Getting individual elements each time
 var producer = starships.produceRandomElements( randomSeed );
 console.log(producer());
 console.log(producer());
 console.log(producer());
 
+// Getting a shuffled copy of the array by mapping
 var shuffled = starships.map(starships.produceRandomElements( randomSeed ));
 console.log(shuffled);
 ```
