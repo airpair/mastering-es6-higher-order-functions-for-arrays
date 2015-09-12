@@ -392,16 +392,16 @@ This can be implemented in a higher-order function ```Array.prototype.produceRan
 
 ```javascript
 Array.prototype.produceRandomElements = randomSeed => {
-	var remainingIndexes = [];
+   var remainingIndexes = [];
 
-	return () => {
-        if ( remainingIndexes.length === 0 ) {
-        	remainingIndexes = Array.apply(null, Array(this.length)).map((item, index) => index);
-        }
+   return () => {
+      if (remainingIndexes.length === 0) {
+         remainingIndexes = Array.apply(null, Array(this.length)).map((item, index) => index);
+      }
 
-        var selectedIndex = randomSeed(remainingIndexes.length);
-        return this[remainingIndexes.splice(selectedIndex, 1)];
-	}.bind(this);
+      var selectedIndex = randomSeed(remainingIndexes.length);
+      return this[remainingIndexes.splice(selectedIndex, 1)];
+   }.bind(this);
 };
 ```
 
@@ -417,16 +417,16 @@ This function can be used in different ways: getting individual elements each ti
 var starships = require('../starships.json');
 
 var randomSeed = length => {
-	return Math.floor(Math.random() * length);
+   return Math.floor(Math.random() * length);
 };
 
 // Getting individual elements each time
-var producer = starships.produceRandomElements( randomSeed );
+var producer = starships.produceRandomElements(randomSeed);
 console.log(producer());
 console.log(producer());
 console.log(producer());
 
 // Getting a shuffled copy of the array by mapping
-var shuffled = starships.map(starships.produceRandomElements( randomSeed ));
+var shuffled = starships.map( starships.produceRandomElements(randomSeed) );
 console.log(shuffled);
 ```
