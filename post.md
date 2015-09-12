@@ -386,7 +386,7 @@ For more details on ```Array.prototype.find``` and ```Array.prototype.findIndex`
 
 Now that you got the hang of higher-order functions for Arrays, let's write our own function. One that is useful enough to be reusable in different contexts.
 
-Let's suppose we need a function to return a different random element from the array each time it is called. The elements must never repeat within the interval of the array length, i.e., if the array has 10 elements, a different random number must be returned for the 10 first times the function is called. After that, the randomizer must be reset and for the next 10 times the function is called, the client must get another set of 10 random items, and so on.
+Let's suppose we need a function that returns a different random element from the array each time it is called. The elements must never repeat within the interval of the array length, i.e., if the array has 10 elements, a different random element must be returned for the first 10 times the function is called. After that, the randomizer must be reset and for the next 10 times the function is called, the client must get a different random set of 10 random items, and so on.
 
 This can be implemented in a higher-order function ```Array.prototype.produceRandomElements```:
 
