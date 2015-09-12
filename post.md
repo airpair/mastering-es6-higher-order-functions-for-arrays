@@ -382,7 +382,25 @@ var firstShipIndexThatCanTravelFasterThan2000mph = starships
 
 For more details on ```Array.prototype.find``` and ```Array.prototype.findIndex``` see the **Mozilla Developer Network docs**<sup>[MDN - Array.prototype.find()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/find) and [MDN - Array.prototype.findIndex()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/findIndex)</sup>.
 
-## Your own higher-order function for Array
+## Your own higher-order function
+
+Now that you got the hang of higher-order functions for Arrays, let's write a custom function. One that is useful enough to be reusable in different contexts.
+
+```javascript
+Array.prototype.produceRandomElements = randomSeed => {
+	var remainingIndexes = Array.apply(null, Array(this.length)).map((item, index) => index);
+
+	return () => {
+        var remainingIndexesLength = remainingIndexes.length;
+        if ( remainingIndexesLength > 0 ) {
+            var newIndex = randomSeed(remainingIndexesLength);
+            return this[remainingIndexes.splice(newIndex, 1)];
+        }
+		return undefined;
+	}.bind(this);
+};
+```
+
 
 ```javascript
 var starships = require('../starships.json');
@@ -391,25 +409,11 @@ var randomSeed = length => {
 	return Math.floor(Math.random() * length);
 };
 
-Array.prototype.produceRandomElements = randomSeed => {
-	var length = this.length,
-		remainingIndexes = Array.apply(null, Array(length)).map((item, index) => index);
-
-	return () => {
-        let remainingIndexesLength = remainingIndexes.length;
-        if ( remainingIndexesLength > 0 ) {
-            let newIndex = randomSeed(remainingIndexesLength);
-            return this[remainingIndexes.splice(newIndex, 1)];
-        }
-		return undefined;
-	}.bind(this);
-};
-
 var producer = starships.produceRandomElements( randomSeed );
-// console.log(producer());
-// console.log(producer());
-// console.log(producer());
+console.log(producer());
+console.log(producer());
+console.log(producer());
 
 var shuffled = starships.map(starships.produceRandomElements( randomSeed ));
-//console.log(shuffled);
+console.log(shuffled);
 ```
