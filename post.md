@@ -80,7 +80,7 @@ There are many other cool things about arrow functions, like the **lexical this 
 
 ## Higher-order functions for Arrays
 
-Now, let's have a look on some ES6 high-order functions for Arrays. They will allow you to write code using Functional approach, so that you will no longer need to use Imperative ```for```/```while``` loops to process arrays. You will soon enough understand how much better it is to work with those high-order functions compared to loops, as they are much more expressive, readable, reusable, maintainable and consequentially more elegant.
+Now, let's have a look on some ES6 higher-order functions for Arrays. They will allow you to write code using Functional approach, so that you will no longer need to use Imperative ```for```/```while``` loops to process arrays. You will soon enough understand how much better it is to work with those higher-order functions compared to loops, as they are much more expressive, readable, reusable, maintainable and consequentially more elegant.
 
 In order to illustrate, let's take the following Imperative program and rewrite it:
 
@@ -430,3 +430,7 @@ console.log(producer());
 var shuffled = starships.map( starships.produceRandomElements(randomSeed) );
 console.log(shuffled);
 ```
+
+Now you can start writing your own higher-order functions to deal with arrays. A good way to start is creating create functions by composing some of the functions above. As a first challenge, I would propose a simple exercise:
+
+> Implement ```_.pluck()``` from Underscore<sub>http://underscorejs.org/#pluck</sub> only using ES6 higher-order functions for Arrays.
